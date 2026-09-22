@@ -1,0 +1,48 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/violation-escalation",
+  "capability": "Violation escalation surface: maps a detected guard violation to the right escalation channel with retry and audit.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "Violation escalation surface: maps a detected guard violation to the right escalation channel with retry and audit.",
+  "imports": {
+    "#violation-escalation/*": "./src/*",
+    "#violation-escalation/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./create-violation-escalation": {
+      "types": "./src/create-violation-escalation.d.ts",
+      "default": "./src/create-violation-escalation.ts"
+    },
+    "./create-violation-escalation.ts": {
+      "types": "./src/create-violation-escalation.d.ts",
+      "default": "./src/create-violation-escalation.ts"
+    },
+    "./types": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./types.ts": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-violation-escalation",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
